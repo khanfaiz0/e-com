@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+body{
+  background-image: url('static/images/pics2.avif');
+  background-color: rgb(224, 254, 255);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.search {
+  position:relative;
+  width:250px;
+  height:40px;
+  background:white;
+  border-radius:60px;
+  transition:0.3s;
+  box-shadow:0 0 0 5px dark grey;
+  overflow:hidden;
+  margin: left 760px;;
+  float:center;
+}
+
+.search .icon 
+{
+
+position:absolute;
+top:0;
+left:0;
+width:60px;
+height:45px;
+background:white;
+color:black;
+border-radius:60px;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1000;
+cursor:pointer;
+}
+.search .icon::before
+{
+content:'';
+position:absolute;
+width:15px;
+height:15px;
+border:3px solid Black;
+border-radius:50%;
+transform:translate(-4px,-4px);
+}
+.search .icon::after
+{
+content:'';
+position:absolute;
+width:3px;
+height:12px;
+background:Black;
+color:Black;
+transform:translate(6px,6px) rotate(315deg);
+}
+.search .input
+{
+position:relative;
+
+width:150px;
+height:40px;
+display:flex;
+justify-content:center;
+align-items:center;
+font:white;
+}
+.search .input input
+{
+position: absolute;
+font:white;
+background:white;
+top:0;
+width:100%;
+height:100%;
+border:none;
+outline:none;
+font-size:18px;
+padding:10px,0;
+margin-left:120px;
+}
+.clear
+{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+width:15px;
+height:15px;
+right:15px;
+color:black;
+
+cursor: pointer;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.clear:hover
+{
+background:rgb(189, 189, 189);
+color: #ffffff;
+border-radius: 50px;
+}
+.clear::before:hover
+{
+background:rgb(255, 253, 253);
+
+}
+.clear::after:hover
+{
+background:rgb(148, 148, 148);
+color: #f1f1f1;
+}
+.clear::before
+{
+position:absolute;
+content:'';
+width:1px;
+height:15px;
+background:black;
+transform: rotate(45deg);
+
+}
+.clear::after
+{
+position:absolute;
+content:'';
+width:1px;
+height:15px;
+background:black;
+transform: rotate(315deg);
+
+}
+
+
+
+/* The sidepanel menu */
+/* The sidepanel menu */
+.sidepanel  {
+  margin-top: 68px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: auto;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+ 
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+  box-sizing: border-box;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+position: absolute;
+top: 0;
+right: 45px;
+font-size: 25px;
+cursor:pointer;
+}
+.sidepanel .closebtn:hover
+{
+  float: inherit;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+font-size: 20px;
+cursor: pointer;
+
+
+padding: 6px 8px;
+margin-left:10px;
+
+}
+
+.openbtn:hover {
+border: 2px solid white;
+border-radius:2px;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mulish', sans-serif; }
+ :root 
+ { 
+  --text-clr: #4f4f4f;
+ } 
+ p 
+ {
+   color: #6c757d; 
+  } 
+ a
+  {
+    text-decoration: none; 
+    color: var(--text-clr); 
+} 
+ a:hover 
+ {
+   text-decoration: none;
+    color: var(--text-clr); 
+  } 
+ h2 { color: var(--text-clr); font-size: 1.5rem; } 
+ .main_cart { background: #fff; } 
+ .card {
+   border: none; } 
+ .product_img img { 
+  min-width: 200px; max-height: 200px; } 
+ .product_name { 
+  color: black; font-size: 1.4rem; text-transform: capitalize; font-weight: 500; } 
+ .card-title p { 
+  font-size: 0.9rem; font-weight: 500; } 
+ .remove-and-wish p {
+   font-size: 0.8rem; margin-bottom: 0; } 
+ .price-money h3 { 
+  font-size: 1rem; font-weight: 600; } 
+ .set_quantity {
+   position: relative; } 
+ .set_quantity::after { 
+  content: "(Note, 1 piece)"; width: auto; height: auto; text-align: center; position: absolute; bottom: -20px; right: 1.5rem; font-size: 0.8rem; }
+  .page-link {
+     line-height: 16px; width: 45px; font-size: 1rem; display: flex; justify-content: center; align-items: center; color: #495057; } 
+  .page-item input { 
+    line-height: 22px; padding: 3px; font-size: 15px; display: flex; justify-content: center; align-items: center; text-align: center; }
+   .page-link:hover { 
+    text-decoration: none; color: #495057; outline: none !important; } 
+   .page-link:focus { 
+    box-shadow: none; } 
+    .price_indiv p { font-size: 1.1rem; }
+    .fa-heart:hover {
+       color: red; }
+.btn1
+{
+  margin-left: 5px;
+  border: none;
+  width: 95px;
+  height: 36px;
+  border-radius: 3px;
+  background-color: orangered;
+  border: #f1f1f1;
+}
+.btn1:hover{
+  border: none;
+  box-shadow: inset;
+}
+.btn
+
+{
+  color: #111;
+  font-weight: 900px;
+  font-size: bold;
+  background-color: orange;
+  width: 95px;
+  height: 38px;
+  border: none;
+
+}
+
+
+#mypara
+{
+  color: #111;
+  font-weight: bold;
+  font-weight: 800;
+}

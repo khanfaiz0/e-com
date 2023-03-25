@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block start %}
+
+<div class="card-group" style="height:600px">
+{% for cat in category %}
+    <div class="card-wrapper">
+        <div class="card" style="width: 18rem; margin:20px;">
+            <img src="{{cat.category_image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="{% url 'get_categories' cat.slug %}" class="title">
+                <h5 class="card-title">{{cat.category_name}}</h5></a>
+            </div>
+        </div> 
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}

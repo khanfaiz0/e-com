@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+{% block start %}
+{% for product in product %}
+    <div class="card-wrapper">
+        <div class="card" style="width: 18rem; margin:25px;">
+            <img src="{{product.product_img.first.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="{% url 'get_products' product.slug %}" class="title">
+                <h5 class="card-title">{{product.product_name}}</h5></a>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>     
+    </div>
+    {% endfor %}
+{% endblock %}

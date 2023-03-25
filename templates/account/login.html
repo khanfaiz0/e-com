@@ -1,0 +1,41 @@
+{% extends 'base/base.html' %}
+
+{% block start %}
+<!-- Button trigger modal -->
+{% comment %} <button type="button" class="btn btn-primary" onclick="foo()" >
+  Launch demo modal
+</button> {% endcomment %}
+
+<!-- Modal -->
+<div class="card w-50 p-4 position-relative " style="background-color: #E7C0D3; margin:20px 0px 0px 300px;">
+  <form method='POST'>
+      {% csrf_token %}
+      {% include "base/alert.html" %}
+      <legend>Login</legend>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" required name='email' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" required name='password' class="form-control" id="exampleInputPassword1">
+      </div>
+      {% comment %} <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div> {% endcomment %}
+      <button type="submit" class="btn btn-primary" position="center">Login</button>
+  </form>
+
+</div>
+{% comment %} java script {% endcomment %}
+
+<script type="text/javascript">
+  function foo(){
+    document.write("java script");
+  }
+</script>
+
+{% endblock  %}

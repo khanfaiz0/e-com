@@ -1,0 +1,85 @@
+/* Search.. Bar CSS /*/
+
+
+.card{
+  margin:0.4em;
+  
+  
+  background : #fdfdfd;
+  box-shadow: 0 2px 5px rgb(122, 122, 122), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 50px 18px 36px;
+  cursor: pointer;
+  width:calc(100%/3);
+  border: 10px rgb(255, 163, 83);
+  margin-left: 5px;
+  }
+
+.card:hover{
+ transform: scale(1.05);
+box-shadow: 0 10px 20px rgb(139, 255, 211), 0 4px 8px rgba(136, 128, 128, 0.979);
+transition: 0.3s;
+}
+
+.card-wrapper
+{
+display:inline-flex;
+background-image: linear-gradient(rgb(185, 235, 255), rgb(159, 255, 210));
+
+}
+.card button {
+  opacity: 0;
+  height: 32px;
+
+  border: none;
+  outline: 0;
+  padding-right: 10px;
+  color: white;
+  background-color: rgb(90, 92, 0);
+  text-align: left;
+  cursor: pointer;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.card button:hover {
+opacity: 1;
+background-color: rgb(201, 204, 0);
+color:rgb(255, 255, 255);
+border-radius: 20px;
+}
+.card p:hover
+{
+  color: #111;
+}
+
+
+
+.card  a:hover {
+width: auto;
+background-color: #7a7a7a9d;
+color: #ffffff;
+border-radius: 80px;
+
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
